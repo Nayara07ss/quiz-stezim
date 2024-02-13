@@ -1,0 +1,147 @@
+/* Importa a fonte 'Inter' do Google Fonts para uso no site */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+  
+/* Define estilos padrão para todos os elementos */
+* {
+  margin: 0; /* Define margem zero para todos os elementos */
+  padding: 0; /* Define padding zero para todos os elementos */
+  box-sizing: border-box; /* Faz com que a largura e altura incluam o preenchimento e a borda, mas não a margem */
+}
+
+/* Define variáveis globais */
+:root {
+  --border-color: #334155; /* Define uma variável para a cor da borda */
+  --checked-color: #c8e39d; /* Define uma variável para a cor da borda quando o input está marcado */
+}
+
+/* Define estilos específicos para o body */
+body {
+  font-family: 'Inter', sans-serif; /* Define a fonte padrão para o corpo */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  background-color: #94a3b8 ;
+}
+
+/* Estilos para o elemento <main> que contém o conteúdo principal */
+main {
+  padding: 20px; /* Adiciona preenchimento interno de 20px */
+  max-width: 640px; /* Define a largura máxima do conteúdo principal */
+  margin: 0 auto 64px; /* Centraliza o elemento na página e adiciona uma margem inferior */
+}
+
+/* Estilos para o cabeçalho */
+header {
+  padding-bottom: 24px !important;
+  border-bottom: 1px solid #334155 !important;
+  color: #e2f8f8 !important;
+}
+
+
+
+/* Estilos para o título dentro do cabeçalho */
+header h1 {
+  margin-top: 24px;
+  font-size: 26px; /* Define o tamanho da fonte */
+  color:#e2f8f8;
+}
+
+#quiz {
+  counter-reset: quiz-item;
+}
+
+/* Estilos para os itens do quiz */
+.quiz-item {
+  margin-top: 24px; /* Adiciona uma margem superior de 24px */
+  border: 1px solid var(--border-color); /* Adiciona uma borda com cor definida pela variável */
+  border-radius: 6px; /* Adiciona uma borda arredondada */
+
+  overflow: hidden;
+}
+
+/* Estilos para os títulos dentro dos itens do quiz */
+.quiz-item h3 {
+  padding: 16px 20px; /* Adiciona preenchimento interno */
+  color: #e2f8f8;
+
+  display:flex;
+  align-items: center;
+  gap: 12px;
+
+  background-color:#1e293b;
+}
+
+.quiz-item h3:before{
+  counter-increment: quiz-item;
+  content: counter(quiz-item);
+
+  background-color: #293437 ;
+  width: 28px;
+  height: 28px;
+  font-size: 12px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+/* Estilos para as listas dentro dos itens do quiz */
+.quiz-item dl {
+  padding: 20px 24px; /* Adiciona preenchimento interno */
+  display: grid; /* Define o layout como grid */
+  gap: 8px; /* Adiciona espaço entre os elementos */
+}
+
+/* Estilos para os termos dentro das listas */
+.quiz-item dl dt {
+  font-size: 14px; /* Define o tamanho da fonte */
+  line-height: 24px; /* Define a altura da linha */
+  letter-spacing: 0; /* Define o espaçamento entre caracteres */
+  display: flex; /* Define o layout como flexível */
+  align-items: center; /* Alinha os itens verticalmente */
+  gap: 8px; /* Adiciona espaço entre os elementos */
+  color: #e2f8f8;
+}
+ 
+/* Estilos para os inputs */
+input {
+  all: unset; /* Reseta todos os estilos padrão */
+  border: 1px solid #334155; /* Adiciona uma borda com cor definida */
+  width: 16px; /* Define a largura */
+  height: 16px; /* Define a altura */
+  border-radius: 50%; /* Faz com que o input tenha forma de círculo */
+  display: flex; /* Define o layout como flexível */
+  align-items: center; /* Alinha os itens verticalmente */
+  justify-content: center; /* Alinha os itens horizontalmente */
+  flex-shrink: 0;
+}
+
+/* Estilos para os inputs que estão marcados */
+input:checked {
+  border: 1px solid var(--checked-color); /* Altera a cor da borda quando marcado */
+}
+
+/* Estilos para o indicador de marcação */
+input:checked:before {
+  content: ""; /* Adiciona um conteúdo antes do input */
+  width: 10px; /* Define a largura */
+  height: 10px; /* Define a altura */
+  display: block; /* Define o elemento como bloco */
+  background-color: var(--checked-color); /* Define a cor de fundo */
+  border-radius: 50%; /* Faz com que o indicador tenha forma de círculo */
+}
+
+/* Estilos para o elemento com o ID 'acertos' */
+#acertos {
+  text-align: center; /* Centraliza o texto */
+  background-color: var(--checked-color); /* Define a cor de fundo */
+  position: fixed; /* Define a posição como fixa */
+  bottom: 0; /* Define a posição vertical como inferior */
+  left: 0; /* Define a posição horizontal como esquerda */
+  width: 100%; /* Define a largura total */
+  padding: 12px; /* Adiciona preenchimento interno */
+}
