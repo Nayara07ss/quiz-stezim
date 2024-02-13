@@ -1,96 +1,96 @@
- 
 const perguntas = [
-    {
-      pergunta: "Qual é o tipo de dado que representa um número inteiro em JavaScript?",
-      respostas: [
-        "String",
-        "Number",
-        "Boolean"
-      ],
-      correta: 1
-    },
-    {
-      pergunta: "Qual é a função utilizada para exibir uma mensagem de alerta em JavaScript?",
-      respostas: [
-        "console.log()",
-        "alert()",
-        "prompt()"
-      ],
-      correta: 1
-    },
-    {
-      pergunta: "Como você declara uma variável em JavaScript?",
-      respostas: [
-        "let",
-        "var",
-        "both A and B"
-      ],
-      correta: 2
-    },
-    {
-      pergunta: "Qual operador é usado para verificar se dois valores são iguais em valor e tipo em JavaScript?",
-      respostas: [
-        "==",
-        "===",
-        "=="
-      ],
-      correta: 1
-    },
-    {
-      pergunta: "Qual é a maneira correta de escrever um comentário de uma linha em JavaScript?",
-      respostas: [
-        "/* comentário */",
-        "// comentário",
-        "<!-- comentário -->"
-      ],
-      correta: 1
-    },
-    {
-      pergunta: "Qual é o operador de atribuição em JavaScript?",
-      respostas: [
-        "=",
-        ":=",
-        "<-"
-      ],
-      correta: 0
-    },
-    {
-      pergunta: "Qual é o nome da função usada para converter uma string em um número em JavaScript?",
-      respostas: [
-        "parseInt()",
-        "toNumber()",
-        "numberConvert()"
-      ],
-      correta: 0
-    },
-    {
-      pergunta: "Qual é a função usada para remover o último elemento de um array em JavaScript?",
-      respostas: [
-        "pop()",
-        "removeLast()",
-        "deleteLast()"
-      ],
-      correta: 0
-    },
-    {
-      pergunta: "Qual é a sintaxe correta para um loop 'for' em JavaScript?",
-      respostas: [
-        "for (i = 0; i < 5; i++)",
-        "for (i < 5; i++)",
-        "for (i = 0; i < 5)"
-      ],
-      correta: 0
-    },
-    {
-      pergunta: "Qual é a maneira correta de incluir um arquivo JavaScript externo?",
-      respostas: [
-        "<js src='script.js'>",
-        "<script src='script.js'>",
-        "<include src='script.js'>"
-      ],
-      correta: 1
-    }
-  ];
+  {
+    pergunta: "Qual é o nome do personagem interpretado por Ryan Gosling em La La Land?",
+    respostas: [
+      "A) Sebastian",
+      "B) Mia",
+      "C) Keith"
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "Quem dirigiu o filme La La Land?",
+    respostas: [
+      "A) Christopher Nolan",
+      "B) Damien Chazelle",
+      "C) Quentin Tarantino"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Em qual cidade se passa a maior parte da história de La La Land?",
+    respostas: [
+      "A) Nova York",
+      "B) Paris",
+      "C) Los Angeles"
+    ],
+    correta: 2
+  },
+  {
+    pergunta: "Qual é a profissão de Mia, interpretada por Emma Stone?",
+    respostas: [
+      "A) Cantora",
+      "B) Atriz",
+      "C) Bailarina"
+    ],
+    correta: 1
+  },
+  {
+    pergunta: "Qual prêmio o filme La La Land ganhou no Oscar 2017?",
+    respostas: [
+      "A) Melhor Filme",
+      "B) Melhor Diretor",
+      "C) Nenhum prêmio"
+    ],
+    correta: 2
+  },
+  {
+    pergunta: "Quem interpreta o papel do chefe de Sebastian, Keith?",
+    respostas: [
+      "A) John Legend",
+      "B) Bradley Cooper",
+      "C) Justin Timberlake"
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "Qual é o gênero principal do filme La La Land?",
+    respostas: [
+      "A) Comédia",
+      "B) Drama",
+      "C) Musical"
+    ],
+    correta: 2
+  },
+  {
+    pergunta: "Quantos Oscars o filme La La Land ganhou?",
+    respostas: [
+      "A) 3",
+      "B) 5",
+      "C) 7"
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "Qual é o nome da música principal de La La Land?",
+    respostas: [
+      "A) City of Stars",
+      "B) Another Day of Sun",
+      "C) Audition (The Fools Who Dream)"
+    ],
+    correta: 0
+  },
+  {
+    pergunta: "Em que ano La La Land foi lançado?",
+    respostas: [
+      "A) 2014",
+      "B) 2016",
+      "C) 2018"
+    ],
+    correta: 1
+  }
+];
+```
   // Seleciona o elemento HTML com o ID "quiz"
   const quiz = document.querySelector('#quiz');
   // Seleciona o elemento HTML "template"
