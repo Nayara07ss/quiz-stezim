@@ -1,98 +1,3 @@
-Aqui está o código corrigido:
-
-```javascript
-const perguntas = [
-  {
-    pergunta: "Qual é o nome do personagem interpretado por Ryan Gosling em La La Land?",
-    respostas: [
-      "A) Sebastian",
-      "B) Mia",
-      "C) Keith"
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "Quem dirigiu o filme La La Land?",
-    respostas: [
-      "A) Christopher Nolan",
-      "B) Damien Chazelle",
-      "C) Quentin Tarantino"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "Em qual cidade se passa a maior parte da história de La La Land?",
-    respostas: [
-      "A) Nova York",
-      "B) Paris",
-      "C) Los Angeles"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "Qual é a profissão de Mia, interpretada por Emma Stone?",
-    respostas: [
-      "A) Cantora",
-      "B) Atriz",
-      "C) Bailarina"
-    ],
-    correta: 1
-  },
-  {
-    pergunta: "Qual prêmio o filme La La Land ganhou no Oscar 2017?",
-    respostas: [
-      "A) Melhor Filme",
-      "B) Melhor Diretor",
-      "C) Nenhum prêmio"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "Quem interpreta o papel do chefe de Sebastian, Keith?",
-    respostas: [
-      "A) John Legend",
-      "B) Bradley Cooper",
-      "C) Justin Timberlake"
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "Qual é o gênero principal do filme La La Land?",
-    respostas: [
-      "A) Comédia",
-      "B) Drama",
-      "C) Musical"
-    ],
-    correta: 2
-  },
-  {
-    pergunta: "Quantos Oscars o filme La La Land ganhou?",
-    respostas: [
-      "A) 3",
-      "B) 5",
-      "C) 7"
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "Qual é o nome da música principal de La La Land?",
-    respostas: [
-      "A) City of Stars",
-      "B) Another Day of Sun",
-      "C) Audition (The Fools Who Dream)"
-    ],
-    correta: 0
-  },
-  {
-    pergunta: "Em que ano La La Land foi lançado?",
-    respostas: [
-      "A) 2014",
-      "B) 2016",
-      "C) 2018"
-    ],
-    correta: 1
-  }
-];
 
 // Seleciona o elemento HTML com o ID "quiz"
 const quiz = document.querySelector('#quiz');
@@ -148,5 +53,8 @@ perguntas.forEach((pergunta, indice) => {
   });
 
   // Remove o texto "Resposta A"
-  quizItem.querySelector
-  
+  quizItem.querySelector('dl dt').remove();
+
+  // Adiciona a pergunta à página
+  quiz.appendChild(quizItem);
+});
