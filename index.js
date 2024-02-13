@@ -1,3 +1,4 @@
+```javascript
 const perguntas = [
   {
     pergunta: "Qual é o nome do personagem interpretado por Ryan Gosling em La La Land?",
